@@ -1,0 +1,307 @@
+[INFO ] 2019-11-20 16:27:03.864 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:27:03.884 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:27:03.885 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:27:03.886 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:27:03.888 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:27:03.889 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:27:03.890 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:27:03.891 [main] InfixConverter - [5.0, 6.0]
+[DEBUG] 2019-11-20 16:27:03.912 [main] InfixConverter - [5.0, 6.0]
+[INFO ] 2019-11-20 16:28:13.998 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:28:14.016 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:28:14.018 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:28:14.018 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:28:14.019 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:28:14.020 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:28:14.021 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:28:14.022 [main] InfixConverter - Adding - to expression
+[DEBUG] 2019-11-20 16:28:14.023 [main] InfixConverter - [5.0, 6.0, -]
+[DEBUG] 2019-11-20 16:28:14.024 [main] InfixConverter - [5.0, 6.0, -]
+[DEBUG] 2019-11-20 16:28:14.025 [main] InfixConverter - [5.0, 6.0, -]
+[INFO ] 2019-11-20 16:28:41.674 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:28:41.694 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:28:41.695 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:28:41.696 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:28:41.697 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:28:41.698 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:28:41.699 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:28:41.700 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:28:41.700 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:28:41.701 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:28:41.702 [main] InfixConverter - Have higher priority, popping top of operand stack to expression
+[DEBUG] 2019-11-20 16:28:41.704 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:28:41.705 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:28:41.706 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:28:41.707 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:28:41.708 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:28:41.709 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:28:41.710 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:28:41.711 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:28:41.712 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[INFO ] 2019-11-20 16:31:18.896 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:31:18.914 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:31:18.915 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:31:18.916 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:31:18.917 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:31:18.918 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:31:18.919 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:31:18.920 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:31:18.921 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:31:18.922 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:31:18.923 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:31:18.925 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:31:18.926 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:31:18.927 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:31:18.928 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:31:18.929 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:31:18.930 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:31:18.931 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:31:18.932 [main] InfixConverter - Have higher priority, popping top of operand stack to expression
+[DEBUG] 2019-11-20 16:31:18.933 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:31:18.934 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:31:18.936 [main] InfixConverter - Current expression queue: [5.0, 6.0, -]
+[DEBUG] 2019-11-20 16:31:18.937 [main] InfixConverter - Current operator stack: [*]
+[DEBUG] 2019-11-20 16:31:18.938 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:31:18.939 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:31:18.940 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:31:18.941 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:31:18.942 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:31:18.943 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[DEBUG] 2019-11-20 16:31:18.945 [main] InfixConverter - [5.0, 6.0, -, 7.0, *]
+[INFO ] 2019-11-20 16:31:59.457 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:31:59.477 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:31:59.481 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:31:59.482 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:31:59.482 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:31:59.482 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:31:59.482 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:31:59.492 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Current operator stack: [-, *]
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Adding - to expression
+[DEBUG] 2019-11-20 16:31:59.492 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:31:59.502 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:31:59.502 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:31:59.502 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:31:59.502 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:31:59.502 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[INFO ] 2019-11-20 16:33:34.369 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:33:34.389 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:33:34.390 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:33:34.391 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:33:34.392 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:33:34.393 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:33:34.394 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:33:34.395 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:33:34.396 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:33:34.397 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:33:34.398 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:33:34.399 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:33:34.401 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:33:34.402 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:33:34.403 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:33:34.403 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:33:34.404 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:33:34.405 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:33:34.406 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:33:34.407 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:33:34.408 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:33:34.409 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:33:34.410 [main] InfixConverter - Current operator stack: [-, *]
+[DEBUG] 2019-11-20 16:33:34.411 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:33:34.412 [main] InfixConverter - Adding - to expression
+[DEBUG] 2019-11-20 16:33:34.413 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:33:34.413 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:33:34.414 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:33:34.415 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:33:34.416 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:33:34.417 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[INFO ] 2019-11-20 16:34:10.328 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:34:10.348 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:34:10.350 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:34:10.351 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:34:10.352 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:34:10.353 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:34:10.354 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:34:10.355 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:34:10.356 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:34:10.357 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:34:10.357 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:34:10.358 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:34:10.359 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:34:10.360 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:34:10.361 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:34:10.361 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:34:10.362 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:34:10.363 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:34:10.363 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:34:10.365 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:34:10.366 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:34:10.366 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:34:10.367 [main] InfixConverter - Current operator stack: [-, *]
+[DEBUG] 2019-11-20 16:34:10.368 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:34:10.369 [main] InfixConverter - Adding - to expression
+[DEBUG] 2019-11-20 16:34:10.369 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:34:10.370 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:34:10.371 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:34:10.372 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:34:10.373 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[DEBUG] 2019-11-20 16:34:10.374 [main] InfixConverter - [5.0, 6.0, 7.0, -, *]
+[INFO ] 2019-11-20 16:35:36.514 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:35:36.533 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:35:36.533 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:35:36.535 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:35:36.536 [main] InfixConverter - Evaluating: -
+[DEBUG] 2019-11-20 16:35:36.537 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:35:36.538 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:35:36.538 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:35:36.539 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:35:36.540 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:35:36.541 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:35:36.542 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:35:36.542 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:35:36.543 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:35:36.544 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:35:36.545 [main] InfixConverter - Current operator stack: [-]
+[DEBUG] 2019-11-20 16:35:36.545 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:35:36.546 [main] InfixConverter - Comparing operand to -
+[DEBUG] 2019-11-20 16:35:36.547 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:35:36.547 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:35:36.548 [main] InfixConverter - Evaluating: 7.0
+[DEBUG] 2019-11-20 16:35:36.548 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:35:36.549 [main] InfixConverter - Current operator stack: [-, *]
+[DEBUG] 2019-11-20 16:35:36.550 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:35:36.550 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:35:36.551 [main] InfixConverter - Adding - to expression
+[DEBUG] 2019-11-20 16:35:36.552 [main] InfixConverter - [5.0, 6.0, 7.0, *, -]
+[DEBUG] 2019-11-20 16:35:36.552 [main] InfixConverter - [5.0, 6.0, 7.0, *, -]
+[DEBUG] 2019-11-20 16:35:36.553 [main] InfixConverter - [5.0, 6.0, 7.0, *, -]
+[DEBUG] 2019-11-20 16:35:36.553 [main] InfixConverter - [5.0, 6.0, 7.0, *, -]
+[DEBUG] 2019-11-20 16:35:36.554 [main] InfixConverter - [5.0, 6.0, 7.0, *, -]
+[INFO ] 2019-11-20 16:48:31.732 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:48:31.752 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:48:31.753 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:48:31.754 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:48:31.755 [main] InfixConverter - Evaluating: +
+[DEBUG] 2019-11-20 16:48:31.756 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:48:31.760 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:48:31.761 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:48:31.763 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:48:31.764 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:48:31.765 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:48:31.766 [main] InfixConverter - Current operator stack: [+]
+[DEBUG] 2019-11-20 16:48:31.767 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:48:31.768 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:48:31.769 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:48:31.770 [main] InfixConverter - Current operator stack: [+]
+[DEBUG] 2019-11-20 16:48:31.770 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:48:31.771 [main] InfixConverter - Comparing operand to +
+[DEBUG] 2019-11-20 16:48:31.772 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:48:31.773 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:48:31.774 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:48:31.775 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:48:31.775 [main] InfixConverter - Current operator stack: [+, *]
+[DEBUG] 2019-11-20 16:48:31.776 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:48:31.777 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:48:31.778 [main] InfixConverter - Adding + to expression
+[DEBUG] 2019-11-20 16:48:31.779 [main] InfixConverter - [5.0, 6.0, 6.0, *, +]
+[DEBUG] 2019-11-20 16:48:31.780 [main] InfixConverter - [5.0, 6.0, 6.0, *, +]
+[DEBUG] 2019-11-20 16:48:31.781 [main] InfixConverter - [5.0, 6.0, 6.0, *, +]
+[DEBUG] 2019-11-20 16:48:31.782 [main] InfixConverter - [5.0, 6.0, 6.0, *, +]
+[DEBUG] 2019-11-20 16:48:31.783 [main] InfixConverter - [5.0, 6.0, 6.0, *, +]
+[INFO ] 2019-11-20 16:48:46.735 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:48:46.753 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:48:46.755 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:48:46.755 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:48:46.757 [main] InfixConverter - Evaluating: +
+[DEBUG] 2019-11-20 16:48:46.758 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:48:46.759 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:48:46.760 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:48:46.761 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:48:46.762 [main] InfixConverter - Evaluating: +
+[DEBUG] 2019-11-20 16:48:46.763 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:48:46.764 [main] InfixConverter - Current operator stack: [+]
+[DEBUG] 2019-11-20 16:48:46.765 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:48:46.766 [main] InfixConverter - Comparing operand to +
+[DEBUG] 2019-11-20 16:48:46.767 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:48:46.768 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:48:46.769 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:48:46.770 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:48:46.771 [main] InfixConverter - Current operator stack: [+, +]
+[DEBUG] 2019-11-20 16:48:46.772 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:48:46.772 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:48:46.773 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:48:46.775 [main] InfixConverter - Current operator stack: [+, +]
+[DEBUG] 2019-11-20 16:48:46.776 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:48:46.777 [main] InfixConverter - Comparing operand to +
+[DEBUG] 2019-11-20 16:48:46.778 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:48:46.779 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:48:46.780 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:48:46.780 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:48:46.782 [main] InfixConverter - Current operator stack: [+, +, *]
+[DEBUG] 2019-11-20 16:48:46.782 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:48:46.784 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:48:46.784 [main] InfixConverter - Adding + to expression
+[DEBUG] 2019-11-20 16:48:46.786 [main] InfixConverter - Adding + to expression
+[DEBUG] 2019-11-20 16:48:46.787 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[DEBUG] 2019-11-20 16:48:46.788 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[DEBUG] 2019-11-20 16:48:46.788 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[DEBUG] 2019-11-20 16:48:46.789 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[DEBUG] 2019-11-20 16:48:46.790 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[DEBUG] 2019-11-20 16:48:46.791 [main] InfixConverter - [5.0, 6.0, 6.0, *, +, +]
+[INFO ] 2019-11-20 16:55:00.480 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:55:00.498 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:55:00.499 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:55:00.500 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:55:00.501 [main] InfixConverter - Evaluating: +
+[INFO ] 2019-11-20 16:55:32.816 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:55:32.838 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:55:32.840 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:55:32.841 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:55:32.842 [main] InfixConverter - Evaluating: +
+[DEBUG] 2019-11-20 16:55:32.843 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:55:32.844 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:55:32.845 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:55:32.847 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:55:32.848 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:55:32.850 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:55:32.851 [main] InfixConverter - Current operator stack: [+]
+[DEBUG] 2019-11-20 16:55:32.853 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:55:32.854 [main] InfixConverter - Evaluating: *
+[DEBUG] 2019-11-20 16:55:32.855 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:55:32.856 [main] InfixConverter - Current operator stack: [+]
+[DEBUG] 2019-11-20 16:55:32.857 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:55:32.859 [main] InfixConverter - Comparing operand to +
+[DEBUG] 2019-11-20 16:55:32.862 [main] InfixConverter - Have lower priority
+[DEBUG] 2019-11-20 16:55:32.863 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:55:32.864 [main] InfixConverter - Evaluating: 6.0
+[DEBUG] 2019-11-20 16:55:32.865 [main] InfixConverter - Current expression queue: [5.0, 6.0]
+[DEBUG] 2019-11-20 16:55:32.866 [main] InfixConverter - Current operator stack: [+, *]
+[DEBUG] 2019-11-20 16:55:32.866 [main] InfixConverter - member is operand, adding to expression
+[DEBUG] 2019-11-20 16:55:32.867 [main] InfixConverter - Adding * to expression
+[DEBUG] 2019-11-20 16:55:32.868 [main] InfixConverter - Adding + to expression
+[INFO ] 2019-11-20 16:55:32.872 [main] InfixConverter - Final expression: [5.0, 6.0, 6.0, *, +]
+[INFO ] 2019-11-20 16:55:46.581 [main] InfixConverter - Evaluating: 5.0
+[DEBUG] 2019-11-20 16:55:46.601 [main] InfixConverter - Current expression queue: []
+[DEBUG] 2019-11-20 16:55:46.601 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:55:46.603 [main] InfixConverter - member is operand, adding to expression
+[INFO ] 2019-11-20 16:55:46.604 [main] InfixConverter - Evaluating: +
+[DEBUG] 2019-11-20 16:55:46.605 [main] InfixConverter - Current expression queue: [5.0]
+[DEBUG] 2019-11-20 16:55:46.605 [main] InfixConverter - Current operator stack: []
+[DEBUG] 2019-11-20 16:55:46.606 [main] InfixConverter - member is operator
+[DEBUG] 2019-11-20 16:55:46.607 [main] InfixConverter - Adding operand to operand stack
+[INFO ] 2019-11-20 16:55:46.608 [main] InfixConverter - Evaluating: +
