@@ -13,11 +13,17 @@ class PostfixTest {
 	@Test
 	void test() {
 		InfixConverter c = new InfixConverter();
-		String e = "5 + 6 * 6";
+		String e = "1 * ( 2 + 3 ) * 4";
+                 //e = "1 * 2 + 3 * 4";
 		String[] s = e.split(" ");
 		Queue<String> q = new LinkedList<String>(Arrays.asList(s));
-		
-		c.getPostfixExpression(q);
+		try{
+                    c.getPostfixExpression(q);
+                } catch(Exception ex) {
+                    for(StackTraceElement i: ex.getStackTrace()) {
+                        System.err.println(i);
+                    }
+                }
 	}
 
 }

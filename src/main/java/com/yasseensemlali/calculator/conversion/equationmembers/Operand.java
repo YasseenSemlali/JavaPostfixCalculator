@@ -23,10 +23,7 @@ public class Operand extends ExpressionMember{
 			return true;
 		}
 		
-		if(member.isOperator()) {
-			return true;
-		}
 		
-		return false;
+		return member.isOperator() || member.isLeftParenthesis();
 	}
 }

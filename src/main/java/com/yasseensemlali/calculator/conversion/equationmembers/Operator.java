@@ -1,12 +1,12 @@
 package com.yasseensemlali.calculator.conversion.equationmembers;
 
-public abstract class Operator  extends ExpressionMember implements Comparable<Operator>{
+public abstract class Operator  extends NonNumber{
 	public abstract double apply(Operand operand1, Operand operand2);
-	public abstract int getPrecedence();
 	
 	@Override
-	public int compareTo(Operator o) {
-		return o.getPrecedence() - this.getPrecedence();
+	public int compareTo(NonNumber o) {
+            
+		return this.getPrecedence() - o.getPrecedence();
 	}
 	
 	@Override
@@ -15,10 +15,6 @@ public abstract class Operator  extends ExpressionMember implements Comparable<O
 			return false;
 		}
 		
-		if(member.isOperand()) {
-			return true;
-		}
-		
-		return false;
+		return member.isOperand() ||  member.isRightParenthesis();
 	}
 }
