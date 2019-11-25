@@ -9,6 +9,7 @@ package com.yasseensemlali.calculator.conversion.equationmembers;
  *
  * @author Yasseen
  */
-public abstract class NonNumber extends ExpressionMember implements Comparable<NonNumber> {
+public abstract class NonNumber extends ExpressionMember {
 	public abstract int getPrecedence();
+        public abstract boolean canFollowOnOperatorStack(NonNumber nonNumber);
 }

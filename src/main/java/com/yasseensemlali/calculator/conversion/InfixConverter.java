@@ -9,9 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.yasseensemlali.calculator.conversion.equationmembers.ExpressionMember;
-import com.yasseensemlali.calculator.conversion.equationmembers.InvalidExpressionMemberException;
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidExpressionMemberException;
 import com.yasseensemlali.calculator.conversion.equationmembers.NonNumber;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
+import com.yasseensemlali.calculator.conversion.equationmembers.operators.Times;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.LeftParenthesis;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.RightParenthesis;
 
@@ -20,12 +21,30 @@ public class InfixConverter {
     private final static Logger LOG = LoggerFactory.getLogger(InfixConverter.class);
 
     public Queue<ExpressionMember> getPostfixExpression(Queue<String> expression) {
-        Queue<ExpressionMember> infixExpression = new LinkedList<ExpressionMember>();
-        for (String member : expression) {
-            infixExpression.add(ExpressionMember.getFromString(member));
-        }
-
+        Queue<ExpressionMember> infixExpression = this.processStringQueue(expression);
+        LOG.info("Converting expression " + infixExpression);
         return this.infixToPostfix(infixExpression);
+    }
+
+    private Queue<ExpressionMember> processStringQueue(Queue<String> stringExpression) {
+        Queue<ExpressionMember> infixExpression = new LinkedList<ExpressionMember>();
+        
+        ExpressionMember prevMember = null;
+        for (String member : stringExpression) {
+            ExpressionMember newMember = ExpressionMember.getFromString(member);
+            
+            if(prevMember != null) {
+                if((prevMember.isOperand() && newMember.isLeftParenthesis()) ||
+                        (prevMember.isRightParenthesis()&& newMember.isOperand())) {
+                    infixExpression.add(new Times());
+                }
+            }
+            
+            infixExpression.add(ExpressionMember.getFromString(member));
+            prevMember = newMember;
+        }
+        
+        return infixExpression;
     }
 
     private Queue<ExpressionMember> infixToPostfix(Queue<ExpressionMember> expression) {
@@ -76,11 +95,11 @@ public class InfixConverter {
                 while (!operatorStack.isEmpty()) {
                     LOG.debug("Comparing operand to " + operatorStack.peekLast());
 
-                    if (op.compareTo(operatorStack.peekLast()) > 0) {
-                        LOG.debug("Have higher priority");
+                    if (op.canFollowOnOperatorStack(operatorStack.peekLast())) {
+                        LOG.debug("Can follow");
                         break;
                     } else {
-                        LOG.debug("Have lower priority, popping top of operator stack to expression");
+                        LOG.debug("Can't follow, popping top of operator stack to expression");
                         postfixExpression.add(operatorStack.removeLast());
                         break;
                     }

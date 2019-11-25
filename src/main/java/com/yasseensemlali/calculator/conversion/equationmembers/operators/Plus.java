@@ -5,21 +5,22 @@ import com.yasseensemlali.calculator.conversion.equationmembers.Operand;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
 
 public class Plus extends Operator {
-	private static final int PRECEDENCE = EquationConstants.PRECEDENCE_1;
 
-	@Override
-	public double apply(Operand operand1, Operand operand2) {
-		return operand1.getValue() + operand2.getValue();
-	}
+    private static final int PRECEDENCE = EquationConstants.PRECEDENCE_1;
 
-	@Override
-	public int getPrecedence() {
-		return PRECEDENCE;
-	}
-	
-	@Override
-	public String toString() {
-		return "+";
-	}
+    @Override
+    public Operand apply(Operand operand1, Operand operand2) {
+        return new Operand(operand1.getValue() + operand2.getValue());
+    }
+
+    @Override
+    public int getPrecedence() {
+        return PRECEDENCE;
+    }
+
+    @Override
+    public String toString() {
+        return "+";
+    }
 
 }

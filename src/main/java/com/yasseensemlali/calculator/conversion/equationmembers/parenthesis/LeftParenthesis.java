@@ -21,13 +21,15 @@ public class LeftParenthesis extends Parenthesis {
             return true;
         }
 
-        return member.isOperator() || member.isLeftParenthesis();
+        return member.isOperator() || member.isOperand() ||member.isLeftParenthesis();
     }
 
     @Override
-    public int compareTo(NonNumber arg0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean canFollowOnOperatorStack(NonNumber nonNumber) {
+        return true;
     }
+
+    
 
     @Override
     public String toString() {

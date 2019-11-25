@@ -1,5 +1,6 @@
 package com.yasseensemlali.calculator.conversion.equationmembers;
 
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidExpressionMemberException;
 import com.yasseensemlali.calculator.conversion.equationmembers.operators.*;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.LeftParenthesis;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.RightParenthesis;

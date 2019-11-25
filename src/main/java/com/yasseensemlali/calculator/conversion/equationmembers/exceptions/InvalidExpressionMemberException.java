@@ -1,4 +1,4 @@
-package com.yasseensemlali.calculator.conversion.equationmembers;
+package com.yasseensemlali.calculator.conversion.equationmembers.exceptions;
 
 public class InvalidExpressionMemberException extends RuntimeException{
 
