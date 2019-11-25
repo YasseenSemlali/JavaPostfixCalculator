@@ -38,6 +38,7 @@ public class PostfixEvaluator {
                 LOG.debug("member is operand");
                 
                 if(resultStack.size() < 2) {
+                    throw new InvalidPostfixEquationException("Operator was not preceded by 2 members");
                 }
                 
                 ExpressionMember operand2 = resultStack.removeLast();

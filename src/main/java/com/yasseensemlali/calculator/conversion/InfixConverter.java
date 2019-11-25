@@ -12,6 +12,7 @@ import com.yasseensemlali.calculator.conversion.equationmembers.ExpressionMember
 import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidInfixEquationException;
 import com.yasseensemlali.calculator.conversion.equationmembers.NonNumber;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.NonMatchingParenthesisException;
 import com.yasseensemlali.calculator.conversion.equationmembers.operators.Times;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.LeftParenthesis;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.RightParenthesis;
@@ -75,17 +76,23 @@ public class InfixConverter {
                 LOG.debug("member is right parenthesis");
                 RightParenthesis rightParenthesis = (RightParenthesis) member;
 
+                boolean reachedEnd = false;
                 while (!operatorStack.isEmpty()) {
                     LOG.debug("Evaluating: " + operatorStack.peekLast());
 
                     if (operatorStack.peekLast().isLeftParenthesis()) {
                         LOG.debug("Encountered left parenthesis, discarding it from operator stack");
                         operatorStack.removeLast();
+                        reachedEnd = true;
                         break;
                     } else {
                         LOG.debug("Popping top of operand stack to expression");
                         postfixExpression.add(operatorStack.removeLast());
                     }
+                }
+                
+                if(!reachedEnd) {
+                    throw new NonMatchingParenthesisException("Closing parenthesis was not opened");
                 }
             } else if (member.isOperator()) {
                 LOG.debug("member is operator");
@@ -121,11 +128,54 @@ public class InfixConverter {
             if (!operatorStack.peekLast().isLeftParenthesis()) {
                 LOG.debug("Adding " + operatorStack.peekLast() + " to expression");
                 postfixExpression.add(operatorStack.removeLast());
+            } else {
+                throw new NonMatchingParenthesisException("An opening parenthesis was not closed");
             }
         }
-
+        this.validatePostfix(postfixExpression);
         LOG.info("Final expression: " + postfixExpression.toString());
-
+        
         return postfixExpression;
     }
+    
+    private void validatePostfix(Queue<ExpressionMember> expression) {
+        ExpressionMember[] expressionArray = {};
+        expressionArray = expression.toArray(expressionArray);
+        
+        if(expressionArray.length == 0) {
+            throw new InvalidInfixEquationException("Equation was empty");
+        } else if (expressionArray.length == 1 ) {
+            if(expressionArray[0].isOperand()) {
+                return;
+            } else {
+            throw new InvalidInfixEquationException("Equation had one member, but it was not an operand");
+            }
+        }
+        
+        int operandCount = 0;
+        int operatorCount = 0;
+        
+        for(ExpressionMember member: expressionArray) {
+            if(member.isOperand()) {
+                operandCount++;
+            } else if(member.isOperator()) {
+                operatorCount++;
+            } else {
+            throw new InvalidInfixEquationException("Postfix result did not consist of only operators and operands");
+            }
+        }
+        
+        if(operandCount != operatorCount + 1) {
+            throw new InvalidInfixEquationException("Number of operators did not match number of operands");
+        }
+        
+        if(!(expressionArray[0].isOperand() && expressionArray[1].isOperand())) {
+            throw new InvalidInfixEquationException("Postfix result did not start with 2 numbers");
+        }
+        
+        if(!expressionArray[expressionArray.length-1].isOperator()) {
+            throw new InvalidInfixEquationException("Postfix result did not end with an operator");
+        }
+    }
+    
 }
