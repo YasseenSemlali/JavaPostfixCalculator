@@ -1,7 +1,7 @@
 package com.yasseensemlali.calculator.conversion;
 
 import com.yasseensemlali.calculator.conversion.equationmembers.ExpressionMember;
-import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidExpressionMemberException;
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidInfixEquationException;
 import com.yasseensemlali.calculator.conversion.equationmembers.NonNumber;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operand;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
@@ -51,7 +51,7 @@ public class PostfixEvaluator {
                 
                 resultStack.addLast(this.applyOperator((Operator) member, (Operand) operand1, (Operand) operand2));
             } else {
-                throw new InvalidExpressionMemberException("Could not evaluate expression because it an invalid member: " + member);
+                throw new InvalidPostfixEquationException("Could not evaluate expression because it an invalid member: " + member);
             } 
         }
         

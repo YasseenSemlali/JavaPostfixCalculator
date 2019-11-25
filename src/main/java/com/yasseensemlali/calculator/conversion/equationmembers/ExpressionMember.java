@@ -1,6 +1,6 @@
 package com.yasseensemlali.calculator.conversion.equationmembers;
 
-import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidExpressionMemberException;
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidInfixEquationException;
 import com.yasseensemlali.calculator.conversion.equationmembers.operators.*;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.LeftParenthesis;
 import com.yasseensemlali.calculator.conversion.equationmembers.parenthesis.RightParenthesis;
@@ -26,7 +26,7 @@ public abstract class ExpressionMember {
 			return new Operand(Double.parseDouble(member));
 		} 
                 
-                throw new InvalidExpressionMemberException(member + " is not a valid member");
+                throw new InvalidInfixEquationException(member + " is not a valid member");
 		
 	}
 

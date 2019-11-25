@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.yasseensemlali.calculator.PostfixTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.671 s <<< FAILURE! - in com.yasseensemlali.calculator.PostfixTest
-testResult[3]  Time elapsed: 0.031 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[14.7]> but was:<[-178.10000000000002]>
-	at com.yasseensemlali.calculator.PostfixTest$ValidExpressionTest.testResult(PostfixTest.java:55)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.647 s - in com.yasseensemlali.calculator.PostfixTest

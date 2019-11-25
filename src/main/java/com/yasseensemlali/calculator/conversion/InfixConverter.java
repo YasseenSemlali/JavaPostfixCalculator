@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.yasseensemlali.calculator.conversion.equationmembers.ExpressionMember;
-import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidExpressionMemberException;
+import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.InvalidInfixEquationException;
 import com.yasseensemlali.calculator.conversion.equationmembers.NonNumber;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
 import com.yasseensemlali.calculator.conversion.equationmembers.operators.Times;
@@ -56,7 +56,7 @@ public class InfixConverter {
             LOG.info("Evaluating: " + member);
 
             if (!member.canFollow(previousMember)) {
-                throw new InvalidExpressionMemberException(member + " cannot follow " + previousMember);
+                throw new InvalidInfixEquationException(member + " cannot follow " + previousMember);
             }
 
             LOG.debug("Current expression queue: " + postfixExpression);
@@ -101,14 +101,13 @@ public class InfixConverter {
                     } else {
                         LOG.debug("Can't follow, popping top of operator stack to expression");
                         postfixExpression.add(operatorStack.removeLast());
-                        break;
                     }
                 }
 
                 LOG.debug("Adding operand to operator stack");
                 operatorStack.add(op);
             } else {
-                throw new InvalidExpressionMemberException(member + " was not an operand or operator");
+                throw new InvalidInfixEquationException(member + " was not an operand or operator");
             }
 
             previousMember = member;
