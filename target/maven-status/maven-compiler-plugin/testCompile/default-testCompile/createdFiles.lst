@@ -1,0 +1,4 @@
+com\yasseensemlali\calculator\InvalidExpressionMemberTest.class
+com\yasseensemlali\calculator\InvalidInfixExpressionTest.class
+com\yasseensemlali\calculator\ValidExpressionTest.class
+com\yasseensemlali\calculator\DivideByZeroTest.class
