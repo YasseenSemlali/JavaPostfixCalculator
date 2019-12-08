@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Queue;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +25,7 @@ import org.junit.runners.Parameterized;
 @RunWith(value = Parameterized.class)
 public class InvalidExpressionMemberTest {
     
-    private static PostfixEvaluator evaluator;
+    private PostfixEvaluator evaluator;
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() throws ParseException {
@@ -36,8 +37,8 @@ public class InvalidExpressionMemberTest {
         this.expression = expression;
     }
 
-    @BeforeClass
-    public static void setUp() {
+    @Before
+    public void setUp() {
         evaluator = new PostfixEvaluator();
     }
 
