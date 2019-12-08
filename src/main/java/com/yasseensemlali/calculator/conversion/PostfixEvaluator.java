@@ -13,12 +13,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- *
+ * Evaluates a postfix expression and returns a result
  * @author Yasseen
  */
 public class PostfixEvaluator {
     private final static Logger LOG = LoggerFactory.getLogger(InfixConverter.class);
     
+    /**
+     * @param stringExpression  A queue containing all members of the equation
+     * @return A string containing the result of the operation
+     */
     public String evaluatePostfix(Queue<String> stringExpression) {
         InfixConverter converter = new InfixConverter();
         Queue<ExpressionMember> expression = converter.getPostfixExpression(stringExpression);
@@ -67,6 +71,12 @@ public class PostfixEvaluator {
         return Double.toString(result);
     }
     
+    /**Applies the operator on the specified operands, with operand1 being first
+     * @param operator The operator to apply on the operands
+     * @param operand1 The first operand
+     * @param operand2 The second operand
+     * @return
+     */
     private Operand applyOperator(Operator operator, Operand operand1, Operand operand2) {
         return operator.apply(operand1, operand2);
     }

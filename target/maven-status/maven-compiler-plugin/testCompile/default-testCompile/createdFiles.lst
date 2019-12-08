@@ -1,4 +1,4 @@
-com\yasseensemlali\calculator\PostfixTest$DivideByZeroTest.class
-com\yasseensemlali\calculator\PostfixTest$InvalidInfixExpressionTest.class
-com\yasseensemlali\calculator\PostfixTest$InvalidExpressionMemberTest.class
-com\yasseensemlali\calculator\PostfixTest$ValidExpressionTest.class
+com\yasseensemlali\calculator\InvalidExpressionMemberTest.class
+com\yasseensemlali\calculator\InvalidInfixExpressionTest.class
+com\yasseensemlali\calculator\ValidExpressionTest.class
+com\yasseensemlali\calculator\DivideByZeroTest.class

@@ -1,10 +1,11 @@
 package com.yasseensemlali.calculator.conversion.equationmembers.parenthesis;
 
+import com.yasseensemlali.calculator.conversion.equationmembers.PrecedenceConstants;
 import com.yasseensemlali.calculator.conversion.equationmembers.ExpressionMember;
 import com.yasseensemlali.calculator.conversion.equationmembers.NonNumber;
 import com.yasseensemlali.calculator.conversion.equationmembers.Parenthesis;
 
-/**
+/** A right parenthesis ")"
  *
  * @author Yasseen
  */
@@ -12,7 +13,7 @@ public class RightParenthesis extends Parenthesis{
 
     @Override
     public int getPrecedence() {
-        return Integer.MAX_VALUE;
+        return PrecedenceConstants.PRECEDENCE_MAX;
     }
 
     @Override

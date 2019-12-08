@@ -3,9 +3,9 @@ D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculato
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\exceptions\NonMatchingParenthesisException.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\operators\Plus.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\PostfixEvaluator.java
+D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\PrecedenceConstants.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\exceptions\DivideByZeroException.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\InfixConverter.java
-D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\EquationConstants.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\parenthesis\RightParenthesis.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\exceptions\InvalidExpressionMemberException.java
 D:\School\Sem5\Java\postfixcalculator\src\main\java\com\yasseensemlali\calculator\conversion\equationmembers\exceptions\InvalidPostfixEquationException.java

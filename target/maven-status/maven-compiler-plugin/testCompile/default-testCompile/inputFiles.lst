@@ -1,1 +1,4 @@
-D:\School\Sem5\Java\postfixcalculator\src\test\java\com\yasseensemlali\calculator\PostfixTest.java
+D:\School\Sem5\Java\postfixcalculator\src\test\java\com\yasseensemlali\calculator\InvalidInfixExpressionTest.java
+D:\School\Sem5\Java\postfixcalculator\src\test\java\com\yasseensemlali\calculator\ValidExpressionTest.java
+D:\School\Sem5\Java\postfixcalculator\src\test\java\com\yasseensemlali\calculator\InvalidExpressionMemberTest.java
+D:\School\Sem5\Java\postfixcalculator\src\test\java\com\yasseensemlali\calculator\DivideByZeroTest.java

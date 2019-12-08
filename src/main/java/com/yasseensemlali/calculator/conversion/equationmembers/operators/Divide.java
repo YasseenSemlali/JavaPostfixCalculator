@@ -1,13 +1,17 @@
 package com.yasseensemlali.calculator.conversion.equationmembers.operators;
 
-import com.yasseensemlali.calculator.conversion.equationmembers.EquationConstants;
+import com.yasseensemlali.calculator.conversion.equationmembers.PrecedenceConstants;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operand;
 import com.yasseensemlali.calculator.conversion.equationmembers.Operator;
 import com.yasseensemlali.calculator.conversion.equationmembers.exceptions.DivideByZeroException;
 
+/** Represents a division operation "/"
+ * @author Yasseen
+ *
+ */
 public class Divide extends Operator {
 
-    private static final int PRECEDENCE = EquationConstants.PRECEDENCE_2;
+    private static final int PRECEDENCE = PrecedenceConstants.PRECEDENCE_2;
 
     @Override
     public Operand apply(Operand operand1, Operand operand2) {

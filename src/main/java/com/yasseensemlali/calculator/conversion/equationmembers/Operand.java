@@ -8,6 +8,9 @@ public class Operand extends ExpressionMember {
         this.value = value;
     }
 
+    /** @return The numeric value of the operand
+     * 
+     */
     public double getValue() {
         return value;
     }
